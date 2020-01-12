@@ -1,0 +1,18 @@
+{
+  "name": "react-native-insta",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject"
+  },
+  "private": true,
+  "dependencies": {
+    "expo": "^36.0.0",
+    "native-base": "^2.13.8",
+    "react": "^16.9.0",
+    "react-native": "^0.61.5",
+    "react-navigation": "^4.0.10"
+  }
+}

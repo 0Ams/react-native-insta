@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "10ms_instagram",
+    "description": "This project is practice.",
+    "slug": "10ms_instagram",
+    "privacy": "public",
+    "sdkVersion": "36.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/10ms_logo_1024.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tenms.practice"
+    },
+    "androidStatusBar": {
+      "barStyle": "dark-content",
+      "backgroundColor": "#ffffff"
+    },
+    "android": {
+      "package": "com.tenms.practice"
+    }
+  }
+}
