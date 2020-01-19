@@ -21,9 +21,9 @@ class HomeTab extends Component {
     return (
       <Container style={style.container}>
         <Header>
-          <Left><Icon name='ios-camera-outline' style={{ paddingLeft: 10 }} /></Left>
+          <Left><Icon name='ios-camera' style={{ paddingLeft: 10 }} /></Left>
           <Body><Text style={{ fontWeight: '900' }}>Instagram</Text></Body>
-          <Right><Icon name='ios-send-outline' style={{ paddingRight: 10 }} /></Right>
+          <Right><Icon name='ios-send' style={{ paddingRight: 10 }} /></Right>
         </Header>
         <Content>
           <View style={{ height: 100 }}>
