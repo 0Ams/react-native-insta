@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import { 
     View,
     Text,
+    Button,
     StyleSheet,
     Platform
     } from 'react-native';
 
 import { Icon } from 'native-base';
-import { createTabNavigator } from 'react-navigation';
+import { createTabNavigator } from 'react-navigation-tabs';
 
 import HomeTab from './AppTabNavigator/HomeTab';
 import SearchTab from './AppTabNavigator/SearchTab';
@@ -16,14 +17,15 @@ import LikesTab from './AppTabNavigator/LikesTab';
 import ProfileTab from './AppTabNavigator/ProfileTab';
 
 class MainScreen extends Component{
-
     static navigationOptions = {
+        title: 'MainScreen',
         header: null
     }
 
     render() {
+        const { navigate } = this.props.navigation;
         return (
-            <AppTabNavigator />
+          <AppTabNavigator />
         );
     }
 }

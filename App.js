@@ -1,24 +1,18 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 // react-natvigation 라이브러리 에서 StackNavigator 추가하기
-import { createStackNavigator } from 'react-navigation';
+import { createAppContainer } from 'react-navigation';
+
+import { createStackNavigator } from 'react-navigation-stack';
 // MainScreen 추가
 import MainScreen from './Components/MainScreen';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <AppStackNavigator />
-    );
-  }
-}
-
-// StackNavigator 를 App에 추가하기
 const AppStackNavigator = createStackNavigator({
-  Main:{
-    screen: MainScreen
-  }
-})
+  Main: { screen: MainScreen },
+});
+
+const AppContainer = createAppContainer(AppStackNavigator);
+export default AppContainer;
 
 const styles = StyleSheet.create({
   container: {
